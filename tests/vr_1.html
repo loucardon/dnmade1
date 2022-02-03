@@ -1,0 +1,87 @@
+<html>
+
+  <head>
+
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script src="https://cdn.rawgit.com/elbobo/aframe-multisrc-component/b6d23310/dist/0.3/aframe-multisrc-component.js"></script>
+
+  </head>
+  <body>
+
+    <a-scene background="color: lightpink">
+
+        <!-- width > x, height > y, depth > z -->
+        <!-- position > x, y, z -->
+        <!-- nb2 : cmd+K+C = commentaire, cmd+K+U = c'est plus un commentaire, magie! -->
+
+    <a-assets>
+
+        <img id="crawfish" src="crawfishpattern.png"></img>
+        <img id="langoustes" src="langoustes.png"></img>
+        <img id="langoustes_0" src="langoustes_0.png"></img>
+        <img id="langoustes_1" src="langoustes_1.png"></img>
+        <img id="langoustes_2" src="langoustes_2.png"></img>
+        <img id="shrek" src="shrek.png"></img>
+        <img id="crab" src="crab.png"></img>
+
+    </a-assets>
+
+    <a-box
+        width="1" height="0.5" depth="1"
+        position="0 0.25 -2"
+        color="white"
+        multisrc="src2:#langoustes">
+    </a-box>
+
+    <!-- <a-plane
+        position="1 0 -4"
+        rotation="-90 0 0"
+        width="2" height="4"
+        color="#7BC8A4">
+    </a-plane> -->
+  
+    <a-box
+      src="#crab"
+      position="0 5 0"
+      height="10" width="10" depth="0.1"
+      rotation="-90 0 0">
+    </a-box>
+
+    <a-plane
+      src="#crawfish"
+      height="10" width="10"
+      rotation="-90 0 0"
+      repeat="2 2">
+    </a-plane>
+
+    <a-box
+      src="#langoustes_1"
+      height="5" width="10" depth="0.1"
+      position="0 2.5 -5">
+    </a-box>
+
+    <a-box
+      src="#shrek"
+      height="5" width="10" depth="0.1"
+      position="0 2.5 5">
+    </a-box>
+
+    <a-box
+      src="#langoustes_2"
+      height="5" width="10" depth="0.1"
+      position="5 2.5 0"
+      rotation="0 90 0">
+    </a-box>
+
+    <a-box
+      src="#langoustes_0"
+      height="5" width="10" depth="0.1"
+      position="-5 2.5 0"
+      rotation="0 90 0">
+    </a-box>
+
+    </a-scene>
+
+  </body>
+
+</html>

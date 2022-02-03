@@ -1,0 +1,38 @@
+<html>
+
+  <head>
+
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+
+  </head>
+  <body>
+
+    <a-scene background="color: lightpink">
+
+        <!-- width > x, height > y, depth > z -->
+        <!-- position > x, y, z -->
+
+    <a-assets>
+
+        <img id="crawfish" src="crawfishpattern.png"></img>
+
+    </a-assets>
+
+    <a-box
+        width="1" height="1" depth="1"
+        position="-1.5 -0.5 -2.5"
+        color="lightpink"
+        src="#crawfish">
+    </a-box>
+    <a-plane
+        position="1 0 -4"
+        rotation="-90 0 0"
+        width="2" height="4"
+        color="#7BC8A4">
+    </a-plane>
+
+    </a-scene>
+
+  </body>
+
+</html>
