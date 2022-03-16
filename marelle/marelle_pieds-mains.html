@@ -11,98 +11,100 @@
 <body>
     <a-scene background="color: #5280A7">
 
-        <a-assets>
-          <a-asset-item id="leftfoot" src="../piedgauche.glb"></a-asset-item>
-          <a-asset-item id="rightfoot" src="../pieddroite.glb"></a-asset-item>
+      <a-assets>
+        <img id="bleu0" src="./assets/images/bleu0.png"></img>
+        <img id="bleu1" src="./assets/images/bleu1.png"></img>
+        <img id="bleu2" src="./assets/images/bleu2.png"></img>
+        <img id="jaune" src="./assets/images/jaune.png"></img>
+        <img id="rose" src="./assets/images/rose.png"></img>
+        <img id="rouge" src="./assets/images/rouge.png"></img>
+        <img id="vert1" src="./assets/images/vert1.png"></img>
+        <img id="vert2" src="./assets/images/vert2.png"></img>
+        <img id="vert3" src="./assets/images/vert3.png"></img>
+        <img id="violet" src="./assets/images/violet.png"></img>
+  
+        <img id="ciel" src="./assets/images/ciel.png"></img>
+      </a-assets>
 
-          <img id="bleu" src="./assets/images/bleu.png"></img>
-          <img id="jaune" src="./assets/images/jaune.png"></img>
-          <img id="rose" src="./assets/images/rose.png"></img>
-          <img id="rouge" src="./assets/images/rouge.png"></img>
-          <img id="vert" src="./assets/images/vert.png"></img>
-          <img id="violet" src="./assets/images/violet.png"></img>
-
-          <img id="ciel" src="./assets/images/ciel.png"></img>
-        </a-assets>
-
-        <!-- INSEREZ VOTRE ENVIRONNEMENT, CI-DESSOUS ... -->
+    <!-- INSEREZ VOTRE ENVIRONNEMENT, CI-DESSOUS ... -->
         
-      <a-cylinder
-        src="#bleu"
-        position="0 -0.25 0"
-        height="0.5"
-        radius="0.2"
-        rotation="0 0 0">
-      </a-cylinder>
-  
-      <a-cylinder
-        src="#jaune"
-        position="1 -0.25 0.5"
-        height="0.5"
-        radius="0.28"
-        rotation="0 0 0">
-      </a-cylinder>
-  
-      <a-cylinder
-        src="#rose"
-        position="0.6 -0.25 1.3"
-        height="0.5"
-        radius="0.26"
-        rotation="0 0 0">
-      </a-cylinder>
-  
-      <a-cylinder
-        src="#rouge"
-        position="-0.5 -0.25 1.4"
-        height="0.5"
-        radius="0.24"
-        rotation="0 0 0">
-      </a-cylinder>
-  
-      <a-cylinder
-        src="#vert"
-        position="-1.4 -0.25 0.9"
-        height="0.5"
-        radius="0.22"
-        rotation="0 0 0">
-      </a-cylinder>
-  
-      <a-cylinder
-        src="#vert"
-        position="-1.6 -0.25 0.2"
-        height="0.5"
-        radius="0.20"
-        rotation="0 0 0">
-      </a-cylinder>
-  
-      <a-cylinder
-        src="#vert"
-        position="-1.4 -0.25 -0.5"
-        height="0.5"
-        radius="0.18"
-        rotation="0 0 0">
-      </a-cylinder>
-  
-      <a-cylinder
-        src="#violet"
-        position="-1 -0.25 -1"
-        height="0.5"
-        radius="0.16"
-        rotation="0 0 0">
-      </a-cylinder>
-  
-      <a-cylinder
-        src="#bleu"
-        position="0 -0.25 -1.5"
-        height="0.5"
-        radius="0.1"
-        rotation="0 0 0">
-      </a-cylinder>
-  
-      <a-sky
-        src="#ciel"
-      >
-      </a-sky>
+    <a-cylinder
+      src="#bleu1"
+      position="0 -0.005 0"
+      height="0.01"
+      radius="0.2"
+      rotation="0 0 0">
+    </a-cylinder>
+
+    <a-cylinder
+      src="#jaune"
+      position="1 -0.005 0.5"
+      height="0.001"
+      radius="0.28"
+      rotation="0 0 0">
+    </a-cylinder>
+
+    <a-cylinder
+      src="#rose"
+      position="0.6 -0.005 1.3"
+      height="0.01"
+      radius="0.26"
+      rotation="0 0 0">
+    </a-cylinder>
+
+    <a-cylinder
+      src="#rouge"
+      position="-0.5 -0.005 1.4"
+      height="0.01"
+      radius="0.24"
+      rotation="0 0 0">
+    </a-cylinder>
+
+    <a-cylinder
+      src="#vert1"
+      position="-1.4 -0.005 0.9"
+      height="0.01"
+      radius="0.22"
+      rotation="0 0 0">
+    </a-cylinder>
+
+    <a-cylinder
+      src="#vert2"
+      position="-1.6 -0.005 0.2"
+      height="0.01"
+      radius="0.20"
+      rotation="0 0 0">
+    </a-cylinder>
+
+    <a-cylinder
+      src="#vert3"
+      position="-1.4 -0.005 -0.5"
+      height="0.01"
+      radius="0.18"
+      rotation="0 0 0">
+    </a-cylinder>
+
+    <a-cylinder
+      src="#violet"
+      position="-1 -0.005 -1"
+      height="0.01"
+      radius="0.16"
+      rotation="0 0 0">
+    </a-cylinder>
+
+    <a-box
+      multisrc="src0:#bleu0;src1:#bleu0;src2:#bleu2;
+      src3:#bleu0;src4:#bleu0;src5:#bleu0;"
+      position="0 -0.1 -1.5"
+      height="0.2"
+      depth="0.2"
+      width="0.2">
+    </a-box>
+
+    <a-sky
+      src="#ciel"
+    >
+    </a-sky>
 
         <!-- ... JUSQUE CI-DESSUS -->
 
